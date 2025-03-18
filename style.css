@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap');
+
+* {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-image: url(backgoundimg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+}
+
+.container {
+    padding: 60px;
+    position: absolute;
+    left: 10%;
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 10px;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h1 {
+    font-size: 50px;
+    font-family: "Roboto";
+
+}
+
+p {
+    color: orange;
+    font-size: 30px;
+}
+
+.btn {
+    margin-top: 50px;
+    padding: 25px 25px;
+    font-size: 2.0em;
+    cursor: pointer;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #45a049;
+}
+
+.listening {
+    animation: pulse 1s infinite;
+    background-color: #FF6347;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+.element {
+    position: relative;
+}
+
+.element::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    right: 25vw;
+    margin-top:30px 20px ;
+    background-image: url(cuteAI.png);
+    background-size: contain;
+    width: 180px; /* adjust the width to fit your image */
+    height: 180px; /* adjust the height to fit your image */
+        transform: scale(1.1);
+        transition: transform 0.2s;
+    }
+    .element::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 22vw;
+        margin-top:10px 10px ;
+        background-image: url(backgroundP.png);
+        background-size: contain;
+        width: 230px; /* adjust the width to fit your image */
+        height: 230px; /* adjust the height to fit your image */
+        transform: scale(4.0);
+        transition: transform 0.2s;
+    }
+    
+
+
+
